@@ -9,6 +9,7 @@
       </div>
       <a class="postlistcomment" href="{% url 'post_detail' pk=post.pk %}">Comments: {{post.approve_comments.count}}</a>
 
+      <hr>
     </div>
   {% endfor%}
 </div>

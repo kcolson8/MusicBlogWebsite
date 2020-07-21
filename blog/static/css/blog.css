@@ -23,6 +23,7 @@
   font-family: 'Playfair Display', sans-serif;
   font-size: 1.5em;
   text-align: center;
+  color: #2A9D8F;
 }
 
 .postlisttitle{
@@ -39,48 +40,17 @@
   font-size: 1.5em;
 }
 
+.postcommenttext{
+    font-size: 0.8em;
+}
+
 .btn-comment{
   position: absolute;
   right: 0px;
 }
 
-/* Color changer below */
-
-.loader {
-  filter:hue-rotate(0deg);
-  color:linear-gradient(45deg,#0f8,#08f);
-  animation:hue 10000ms infinite linear;
-
+.boldhr{
+    height: 3px;
 }
 
 
-
-@keyframes spinify {
-  0% {
-    transform: translate(0px,0px);
-
-  }
-  33% {
-    transform: translate(0px,24px);
-    border-radius:100%;
-    width:10px;
-    height:10px;
-
-  }
-   66% {
-    transform:translate(0px,-16px);
-  }
-
-   88% {
-    transform:translate(0px,4px);
-
-  }
-  100% {
-    transform:translate(0px,0px);
-  }
-}
-@keyframes hue{
-  0%{filter: hue-rotate(0deg);}
-  100%{filter:hue-rotate(360deg);}
-
-}

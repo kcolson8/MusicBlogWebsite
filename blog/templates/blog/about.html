@@ -1,6 +1,12 @@
 {% extends "blog/base.html" %}
 {% block content %}
-<h1>About this company</h1>
-<p>Thanks for checking it out!</p>
+{% load static %}
+<h1 style="color: #2A9D8F;">About Unbound Music</h1>
+    <div class="container">
 
+        <img height="320" width="240" align="left" hspace="30" src="{% static 'images/MoroccoPortrait.jpg' %}"/>
+
+        <p>This blog was created by Kellie Colson as a final project to demonstrate self-taught knowledge of full-stack web development in Python and Django. Thanks for checking it out!</p>
+
+    </div>
 {% endblock %}

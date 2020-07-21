@@ -23,9 +23,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'blog/templates/blog')
 SECRET_KEY = 'o-6)1^jdvw^^4+q5i+$!(*3tj^!!hxk66sv91k4c1fi1_vjj%1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kcolson.pythonanywhere.com']
 
 
 # Application definition
@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
@@ -119,6 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = '/home/kcolson/MusicBlogWebsite/blog/static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'blog/static/css')
 
 LOGIN_REDIRECT_URL = '/'

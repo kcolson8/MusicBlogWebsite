@@ -1,6 +1,9 @@
 {% extends "blog/base.html" %}
+{% load static %}
+
 {% block content %}
   <h1>New Comment</h1>
+  <p>*Note that submitted comments must be approved <br> by site admin before they appear on this post</p>
   <form class="post-form" method="post">
     {% csrf_token %}
     {{form.as_p}}
